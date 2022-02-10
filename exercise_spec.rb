@@ -16,6 +16,10 @@ describe Exercise do
     it "should keep end-of-word punctuation intact" do
       Exercise.marklar("How is the weather today? I have not been outside.").must_equal "How is the marklar marklar? I have not been marklar."
     end
+
+    it "should keep end-of-word punctuation intact" do
+        Exercise.marklar("Don't come around").must_equal "Don't come marklar"
+    end
   end
 
   describe "#even_fibonacci" do
